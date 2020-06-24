@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B11406"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FD5A4C">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/radius"
+            android:gravity="center"
+            android:text="eat\?"
+            android:textSize="20dp"
+            android:layout_toLeftOf="@+id/main_bar"
+            />
+
+        <TextView
+            android:id="@+id/main_bar"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="오늘 뭐 먹지?"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:id="@+id/cafe"
+            android:text="카페"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="음식점"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/cafe"
+            android:layout_below="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_below="@+id/main_bar"
+            android:layout_toLeftOf="@id/search_text"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_cafe_SearchView"
+                android:onClick="onRadioButtonClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/radio_restaurant_SearchView"
+                android:onClick="onRadioButtonClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:id="@+id/search_text"
+            android:hint="ex) #맛있는 #가성비 돈까스"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/main_bar"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            />
+        <ImageView
+            android:src="@drawable/_pngtree_search_icon_4422540"
+            android:id="@+id/search_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/main_bar"
+            android:layout_toRightOf="@+id/search_text"
+            />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/searchList"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
