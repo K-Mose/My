@@ -1,4 +1,4 @@
-# What_to_eat_toda
+# What_to_eat_today
 
 what to eat today, **오늘 뭐 먹지**는 데이터 크롤링 분석을 통한 식당 랭킹 어플입니다. <br/>
 오늘 뭐 먹지는 Python의 BeautifulSoap4 라이브러리를 사용하여서 크롤링한 네이버 블로그 데이터들을 customized-KoNLPy를 이용해 전처리 하고 특정 태그에 따라 점수를 내서, 
