@@ -16,16 +16,16 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.kakao.sdk.AppKey"
-            android:value="1fb414a1051f192c3159b54ce66bcbb1" />
+            android:value="" />
         <meta-data
             android:name="com.example.eattoday.DbTaskClass.dbURL"
-            android:value="jdbc:mysql://210.123.255.206:3306/eating?serverTimezone=UTC" />
+            android:value="" />
         <meta-data
             android:name="com.example.eattoday.DbTaskClass.dbID"
-            android:value="aaa" />
+            android:value="" />
         <meta-data
             android:name="com.example.eattoday.DbTaskClass.dbPWD"
-            android:value="123qwe123qwe" />
+            android:value="" />
 
 
 
